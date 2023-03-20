@@ -1,0 +1,11 @@
+model,effnet
+stage,bkwd_inject
+fmodel,RD
+target_worker,2
+target_layer,block2_mbconv_0_conv1_grad_in
+target_epoch,24
+target_step,32
+inj_pos,71/0/7/3
+inj_values,2.23965747329353e+17
+learning_rate,0.002
+seed,123

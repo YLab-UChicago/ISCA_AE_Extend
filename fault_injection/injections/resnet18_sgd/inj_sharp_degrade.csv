@@ -1,0 +1,11 @@
+model,resnet18_sgd
+stage,bkwd_inject
+fmodel,WT
+target_worker,1
+target_layer,basicblock_1_basic_0_conv1_grad_in
+target_epoch,21
+target_step,9
+inj_pos,2/2/56/40
+inj_values,3.31100061855285e+12
+learning_rate,0.001
+seed,123

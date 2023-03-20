@@ -247,7 +247,7 @@ def main():
     record(train_recorder, "Inject to epoch: {}\n".format(target_epoch))
     record(train_recorder, "Inject to step: {}\n".format(target_step))
 
-    ckpt_path = os.path.join(config.golden_model_dir, "epoch_{}".format(target_epoch - 1))
+    ckpt_path = os.path.join(config.golden_model_dir, rp.model, "epoch_{}".format(target_epoch - 1))
     record(train_recorder, "Load weights from {}\n".format(ckpt_path))
     model.load_weights(ckpt_path)
 
